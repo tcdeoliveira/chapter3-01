@@ -27,7 +27,20 @@ interface HomeProps {
 export default function Home(): JSX.Element {
   return (
     <>
-      <h1>Hello!</h1>
+      <header className={`${commonStyles.container} ${styles.header}`}>
+        <div className={commonStyles.container__content}>
+          <img src="/images/Logo.svg" alt="Logo" />
+        </div>
+      </header>
+      <section className={`${commonStyles.container} ${styles.section}`}>
+        <article className={commonStyles.container__content}>
+          <h3>Title</h3>
+          <p>Paragrah</p>
+          <div>
+            <time>Date</time> <span>Author</span>
+          </div>
+        </article>
+      </section>
     </>
   );
 }
