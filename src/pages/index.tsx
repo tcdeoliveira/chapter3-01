@@ -41,6 +41,11 @@ export default function Home(): JSX.Element {
             <time> <FiCalendar/> Date</time> <span> <FiUser/> Author</span>
           </div>
         </article>
+        <div className={commonStyles.container__content}>
+          <button className={styles.load_more_posts_button}>
+            Carregar mais posts
+          </button>
+        </div>
       </section>
     </>
   );
