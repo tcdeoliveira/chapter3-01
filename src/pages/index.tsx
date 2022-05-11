@@ -1,6 +1,7 @@
 import { GetStaticProps } from 'next';
 
 import { getPrismicClient } from '../services/prismic';
+import { FiUser, FiCalendar } from "react-icons/fi";
 
 import commonStyles from '../styles/common.module.scss';
 import styles from './home.module.scss';
@@ -37,9 +38,14 @@ export default function Home(): JSX.Element {
           <h3>Title</h3>
           <p>Paragrah</p>
           <div>
-            <time>Date</time> <span>Author</span>
+            <time> <FiCalendar/> Date</time> <span> <FiUser/> Author</span>
           </div>
         </article>
+        <div className={commonStyles.container__content}>
+          <button className={styles.load_more_posts_button}>
+            Carregar mais posts
+          </button>
+        </div>
       </section>
     </>
   );
